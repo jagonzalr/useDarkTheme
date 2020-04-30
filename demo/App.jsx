@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import { useDarkTheme } from '../src/index' // Rename to your own hook name
+import { useDarkTheme } from '../src/index'
 
 import './styles/tailwind.css'
 import './styles/index.scss'

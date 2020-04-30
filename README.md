@@ -9,6 +9,7 @@ Implement dark theme with [React hooks](https://reactjs.org/docs/hooks-intro.htm
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Demo](#demo)
+- [Notes](#notes)
 - [License](#license)
 
 ## Getting started
@@ -60,6 +61,10 @@ cd useDarkTheme
 npm intall
 npm start
 ```
+
+## Notes
+
+This hook was bootstrap using [hooks-cli](https://github.com/jagonzalr/hooks-cli)
 
 ## License
 
