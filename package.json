@@ -1,5 +1,5 @@
 {
-  "name": "use-custom-hook",
+  "name": "use-dark-theme",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -9,12 +9,12 @@
   "scripts": {
     "start": "NODE_ENV=development BABEL_ENV=development node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.demo.js --env=dev --mode development --host 127.0.0.1 --port 3000 --progress --inline --open",
     "build": "webpack --config webpack.config.js --mode production",
-    "prepare": "echo 'Building useCustomHook' && npm run build",
+    "prepare": "echo 'Building useDarkTheme' && npm run build",
     "lint": "eslint src --ext .js,.jsx --fix && eslint demo --ext .js,.jsx --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/[USERNAME]/[REPO_NAME].git"
+    "url": "git+https://github.com/jagonzalr/useDarkTheme.git"
   },
   "keywords": [
     "React",
@@ -23,9 +23,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/[USERNAME]/[REPO_NAME]/issues"
+    "url": "https://github.com/jagonzalr/useDarkTheme/issues"
   },
-  "homepage": "https://github.com/[USERNAME]/[REPO_NAME]#readme",
+  "homepage": "https://github.com/jagonzalr/useDarkTheme#readme",
   "babel": {
     "presets": [
       "@babel/preset-env",
