@@ -1,7 +1,3 @@
-'use strict'
-
-import React from 'react'
-
 import { useDarkTheme } from '../src/index'
 
 import './styles/tailwind.css'
@@ -17,8 +13,7 @@ export default () => {
           className='mt-2 text-xl'
           onClick={() => {
             theme === 'dark' ? setTheme('light') : setTheme('dark')
-          }}
-        >
+          }}>
           Go to {theme === 'dark' ? 'light' : 'dark'} theme
         </button>
       </div>
