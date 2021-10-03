@@ -1,5 +1,3 @@
-'use strict'
-
 import { useEffect, useState } from 'react'
 
 export const useDarkTheme = (
@@ -7,7 +5,7 @@ export const useDarkTheme = (
   { darkClass = 'dark', lightClass = 'light', storageKey = 'useDarkTheme' } = {}
 ) => {
   const [theme, setTheme] = useState(
-    window.localStorage.getItem(storageKey) || 'light'
+    window.localStorage.getItem(storageKey) ?? 'light'
   )
 
   useEffect(() => {
@@ -23,11 +21,11 @@ export const useDarkTheme = (
     const listener = e => setTheme(e.matches ? darkClass : lightClass)
 
     darkScheme = window.matchMedia('(prefers-color-scheme: dark)')
-    darkScheme.addListener(listener)
-    setTheme(localTheme || (darkScheme.matches ? 'dark' : 'light'))
+    darkScheme.addEventListener('change', listener)
+    setTheme(localTheme ?? (darkScheme.matches ? 'dark' : 'light'))
 
     return () => {
-      if (darkScheme) darkScheme.removeListener(listener)
+      if (darkScheme) darkScheme.removeEventListener(listener)
     }
   }, [])
 
